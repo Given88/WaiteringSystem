@@ -11,12 +11,32 @@ namespace WaiteringSystem.Business
     {
         #region data fields
         private string _empNum;
-        private string _role;
+        public Role _role;
         #endregion
 
         #region Properties
-        public string Role { get { return _role; } set { _role = value; } }
+        public Role Role { get { return _role; } set { _role = value; } }
         private string EmpNum { get { return _empNum; } set { _empNum = value; } }
+        #endregion
+        #region Constructors
+        public Employee(Role roleValue)
+        {
+            switch (roleValue.Description)
+            {
+                case "Runner":
+                    _role = new Runner();
+                    break;
+                case "Headwaiter":
+                    _role = new Headwaiter();
+                    break;
+                case "Waiter":
+                    _role = new Waiter();
+                    break;
+                default:
+                    _role = new Role();
+                    break;
+            }
+        }
         #endregion
     }
 }

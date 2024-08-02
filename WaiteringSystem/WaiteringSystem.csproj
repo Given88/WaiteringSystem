@@ -47,7 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\Employee.cs" />
+    <Compile Include="Business\Headwaiter.cs" />
     <Compile Include="Business\Role.cs" />
+    <Compile Include="Business\Runner.cs" />
+    <Compile Include="Business\Waiter.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

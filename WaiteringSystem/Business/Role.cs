@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace WaiteringSystem.Business
 {
@@ -36,10 +37,27 @@ namespace WaiteringSystem.Business
         }
         #endregion
 
-    public Role()
+        #region Constructors
+
+        public Role()
         {
        _roleID = Role_Type.None;
          _description = "no role";
         }
+        #endregion
+
+        #region methods
+        public virtual int Payment()
+        {
+            return 0;
+        }
+
+        public virtual int Payment(int arg)
+        {
+            return 0;
+        }
+        #endregion
     }
+
+
 }

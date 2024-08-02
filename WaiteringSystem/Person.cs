@@ -14,22 +14,20 @@ namespace WaiteringSystem
         private string _phone;
         #endregion
 
-        #region Property methods
+        #region Properties
         public string ID { get { return _id; } set { _id = value; } }
         public string Name { get { return _name; } set { _name = value; } }
         public string Phone { get { return _phone; } set { _phone = value; } }
         #endregion
 
-        #region default conastructor
+        #region Constructors
         public Person() 
         {
             _id = "";
             _name = "";
             _phone = "";
         }
-        #endregion
-
-        #region Parameterized constructor
+       
         public Person(string id, string name, string phone)
         {
             _id = id;
@@ -38,15 +36,18 @@ namespace WaiteringSystem
         }
         #endregion
 
-        //overrridable ToString method
+        #region methods
         public override string ToString()
         {
-            return _name + " " + _phone;
+            return "Name: "+_name + " Phone: " + _phone;
         }
+        #endregion
     }
 
     /*
    Characteristics of an abstract class"
     -It cannot be instanstiated
+    -It contains methods which are declared without any implementation
+    -Intended to be inherited
     */
 }
