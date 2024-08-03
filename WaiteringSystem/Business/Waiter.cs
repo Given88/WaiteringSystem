@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace WaiteringSystem.Business
 {
-    internal class Waiter:Role
+    public class Waiter:Role
     {
         #region data fields
         private int tips;

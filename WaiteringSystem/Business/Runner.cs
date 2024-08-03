@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WaiteringSystem.Business
 {
-    internal class Runner:Role
+    public class Runner:Role
     {
         #region data fields
         private int tips;

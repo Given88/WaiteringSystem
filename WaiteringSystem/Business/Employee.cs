@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WaiteringSystem.Business
 {
-    internal class Employee:Person
+    public class Employee:Person
     {
         #region data fields
         private string _empNum;

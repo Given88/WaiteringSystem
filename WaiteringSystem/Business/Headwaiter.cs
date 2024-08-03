@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WaiteringSystem.Business
 {
-    internal class Headwaiter:Role
+    public class Headwaiter:Role
     {
         #region data members
         private int salary;
