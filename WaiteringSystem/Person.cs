@@ -39,7 +39,7 @@ namespace WaiteringSystem
         #region methods
         public override string ToString()
         {
-            return _name + _phone;
+            return _name +" "+ _phone;
         }
         #endregion
     }
