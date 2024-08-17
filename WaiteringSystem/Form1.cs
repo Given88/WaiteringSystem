@@ -16,5 +16,25 @@ namespace WaiteringSystem
         {
             InitializeComponent();
         }
+
+        private void customersBindingNavigatorSaveItem_Click(object sender, EventArgs e)
+        {
+            this.Validate();
+            this.customersBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.sampleDatabaseDataSet);
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // TODO: This line of code loads data into the 'sampleDatabaseDataSet.Customers' table. You can move, or remove it, as needed.
+            this.customersTableAdapter.Fill(this.sampleDatabaseDataSet.Customers);
+
+        }
+
+        private void customersDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }
